@@ -6,15 +6,10 @@ A collection of Python scripts designed to automate simple, repetitive tasks com
 
 The purpose of this repository is to build practical security scripting skills and develop small utilities that assist with reconnaissance, scan analysis, reporting, and other penetration testing activities.
 
-## Language and Tools
+## Language and Libraries
 
 - **Language:** Python
-- **Tools:** Nmap
 - **Libraries:** Python standard library modules, depending on the script.
-
-## Usage
-
-Each script has its own directory and README containing its purpose, requirements, and usage instructions.
 
 ## Scope
 
