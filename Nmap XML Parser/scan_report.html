@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nmap Scan Report</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 32px;
+            background: #f3f5f8;
+            color: #202938;
+            font-family: Arial, sans-serif;
+        }
+        main {
+            max-width: 1100px;
+            margin: auto;
+        }
+        h1 { margin-bottom: 8px; }
+        .subtitle { color: #64748b; margin-bottom: 28px; }
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+        .card, section {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .metric {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+        section { margin-bottom: 24px; overflow-x: auto; }
+        h2 { margin-top: 0; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th { background: #f8fafc; }
+        footer {
+            color: #64748b;
+            font-size: 13px;
+            margin-top: 24px;
+        }
+        @media (max-width: 600px) {
+            body { padding: 16px; }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Nmap Scan Report</h1>
+    <p class="subtitle">
+        Generated: 2026-10-15 18:22:58 India Standard Time
+    </p>
+
+    <div class="summary">
+        <div class="card">
+            Hosts in XML
+            <div class="metric">1</div>
+        </div>
+        <div class="card">
+            Hosts reported up
+            <div class="metric">1</div>
+        </div>
+        <div class="card">
+            Open ports
+            <div class="metric">3</div>
+        </div>
+    </div>
+
+    <section>
+        <h2>Host Inventory</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>IP Address</th>
+                    <th>Hostname</th>
+                    <th>Status</th>
+                    <th>Open Ports</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            <tr>
+                <td>192.168.56.10</td>
+                <td>N/A</td>
+                <td>up</td>
+                <td>3</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Open Port and Service Inventory</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Host</th>
+                    <th>Port</th>
+                    <th>Service</th>
+                    <th>Detected Product / Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>192.168.56.10</td>
+                    <td>135/tcp</td>
+                    <td>msrpc</td>
+                    <td>Not detected</td>
+                </tr>
+            
+                <tr>
+                    <td>192.168.56.10</td>
+                    <td>139/tcp</td>
+                    <td>netbios-ssn</td>
+                    <td>Not detected</td>
+                </tr>
+            
+                <tr>
+                    <td>192.168.56.10</td>
+                    <td>445/tcp</td>
+                    <td>microsoft-ds</td>
+                    <td>Not detected</td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        This report summarizes information recorded in the supplied Nmap XML.
+        Detected services and versions do not, by themselves, establish that
+        a vulnerability exists. Results depend on scan scope and options.
+    </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Thu Oct 15 05:28:24 2026 as: nmap -sT -Pn -p 135,139,445,3389 -oX scan_before.xml 192.168.56.10 -->
+<nmaprun scanner="nmap" args="nmap -sT -Pn -p 135,139,445,3389 -oX scan_before.xml 192.168.56.10" start="1792042104" startstr="Thu Oct 15 05:28:24 2026" version="7.95" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="4" services="135,139,445,3389"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1792042104" endtime="1792042105"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.56.10" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+</ports>
+<times srtt="1234" rttvar="2870" to="100000"/>
+</host>
+<runstats><finished time="1792042105" timestr="Thu Oct 15 05:28:25 2026" summary="Nmap done at Thu Oct 15 05:28:25 2026; 1 IP address (1 host up) scanned in 1.26 seconds" elapsed="1.26" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
