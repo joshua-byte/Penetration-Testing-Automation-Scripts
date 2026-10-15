@@ -1,0 +1,11 @@
+<nmaprun>
+  <host>
+    <address addr="192.168.56.10" addrtype="ipv4"/>
+    <ports>
+      <port protocol="tcp" portid="22">
+        <state state="open"/>
+        <service name="ssh" product="OpenSSH" version="9.3"/>
+      </port>
+    </ports>
+  </host>
+</nmaprun>
